@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "../../../AppData/Roaming/Code/User/workspaceStorage/ca5e48d310caaa6b4bb46d9d418b0687/ms-dotnettools.csdevkit/EjemplosFunciones.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "../../../AppData/Roaming/Code/User/workspaceStorage/ca5e48d310caaa6b4bb46d9d418b0687/ms-dotnettools.csdevkit/EjemplosFunciones.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "../../../AppData/Roaming/Code/User/workspaceStorage/ca5e48d310caaa6b4bb46d9d418b0687/ms-dotnettools.csdevkit/EjemplosFunciones.sln"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
