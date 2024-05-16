@@ -12,6 +12,10 @@ public class NumeroComplejo
     public int ParteReal { get; }
     public int ParteImaginaria { get; }
 
+    /// <summary>
+    /// Suma dos numeros complejos
+    /// </summary>
+    /// <param name="numero2"></param>
     public void Sumar(NumeroComplejo numero2)
     {
         int sumaReal = ParteReal + numero2.ParteReal;
