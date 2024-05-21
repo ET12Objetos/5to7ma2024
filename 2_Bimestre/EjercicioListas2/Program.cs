@@ -29,12 +29,15 @@ while (asignatura != "")
     asignatura = Console.ReadLine();
 }
 
+//Informar lista con foreach
 // foreach (Calificacion cal in calificaciones)
 // {
 //     Console.WriteLine($"Asignatura: {cal.Asignatura}");
 //     Console.WriteLine($"Nota: {cal.Nota}");
 // }
 
+
+//informar lista en formato tabla
 var tabla = new ConsoleTable("Asignatura", "Nota");
 
 
