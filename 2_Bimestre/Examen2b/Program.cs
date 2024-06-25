@@ -17,12 +17,8 @@ while (nombrePelicula != "")
     System.Console.Write("Ingrese Año Pelicula: ");
     int añoPelicula = Convert.ToInt32(Console.ReadLine());
 
-    Validacion.ValidarRango(añoPelicula, "El año ingresado no se encuentra en el rango");
-
     System.Console.Write("Ingrese Duración Pelicula: ");
     int duracionPelicula = Convert.ToInt32(Console.ReadLine());
-
-    Validacion.ValidarRango(duracionPelicula, "La duracion ingresado no se encuentra en el rango");
 
     playlist.Agregar(new Pelicula
     {

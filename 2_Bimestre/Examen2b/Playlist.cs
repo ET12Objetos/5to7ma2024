@@ -8,6 +8,10 @@ public class Playlist
 
     public void Agregar(Pelicula pelicula)
     {
+        Validacion.ValidarRango(pelicula.Año, "El año ingresado no se encuentra en el rango");
+
+        Validacion.ValidarRango(pelicula.Duracion, "La duracion ingresado no se encuentra en el rango");
+
         Peliculas.Add(pelicula);
     }
 
