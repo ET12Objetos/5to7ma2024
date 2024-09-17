@@ -1,22 +1,24 @@
 ﻿using EjemploHerencia;
 
-Empleado empleado = new Empleado();
+Empleado empleado1 = new Empleado();
 
 Jefe jefe = new Jefe();
 
 jefe.Nombre = "Josu";
 jefe.Apellido = "Duran";
+jefe.FechaNacimiento = Convert.ToDateTime("2006-9-21");
+Console.WriteLine($"Edad: {jefe.CalcularEdad()}");
 
-jefe.InformarNombreCompleto();
+// jefe.InformarNombreCompleto();
 
-empleado.Nombre = "Josu";
-empleado.Apellido = "Duran";
+Persona empleado2 = new Empleado();
 
-empleado.InformarNombreCompleto();
+Console.WriteLine(empleado2.Email);
 
-Persona persona = new Persona();
+IPersona empleado3 = new Empleado();
 
-persona.Nombre = "Josu";
-persona.Apellido = "Duran";
+//Console.WriteLine(empleado3.);
 
-persona.InformarNombreCompleto();
+
+//la clase abstracta no se puede instanciar un objeto
+//Persona persona = new Persona();

@@ -1,9 +1,9 @@
 namespace EjemploHerencia;
 
 
-public class Empleado : Persona
+public sealed class Empleado : Persona
 {
-    public DateTime FechaNacimiento{ get; set; }    
+    public DateTime FechaNacimiento { get; set; }
     public string Telefono { get; set; }
     public string Direccion { get; set; }
 
